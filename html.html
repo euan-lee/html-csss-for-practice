@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+Create An Account 
+<div flex-direction: column;>
+<form>
+    <label for="start">First name</label>
+    <input placeholder="Name" type="text"/>
+    <label for="start">Last name</label>
+    <input placeholder="Last Name" type="text"/>
+    <label for="start">Email</label>
+    <input placeholder="Email" type="text"/>
+    <label for="start">Username</label>
+    <input placeholder="Username" type="text"/>
+    <label for="start">Password</label>
+    <input placeholder="Password" minlength="10" type="text"/>
+    <label for="start">Birth date</label>
+    <input type="date" id="start" name="trip-start"
+           value="2018-07-22"
+           min="2018-01-01" max="2018-12-31">
+    <label for="start">How happy are you?</label>    
+    <input type="range" list="tickmarks">
+    <datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="10"></option>
+    <option value="20"></option>
+    <option value="30"></option>
+    <option value="40"></option>
+    <option value="50"></option>
+    <option value="60"></option>
+    <option value="70"></option>
+    <option value="80"></option>
+    <option value="90"></option>
+    <option value="100"></option>
+    </datalist>
+    <label for="start">What is your fav. color?</label>
+    <input type="color"/>
+    <input type="submit" value="Create Account"/>
+</form>
+</div>
+</body>
+
+</html>
