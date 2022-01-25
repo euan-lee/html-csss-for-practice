@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<style>
+    #parent-box{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+
+    #first-box{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #second-box{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+div>div>div{
+    margin: 10px 50px 20px 0;
+    height:400px;
+    width:200px;
+    border: solid white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#first-first-box{
+    background-color:#FF6347;
+}
+#first-second-box{
+    background-color:#DEB887;
+}
+#second-first-box{
+    background-color:#008080;
+}
+#second-second-box{
+    background-color:#D7BFD7;
+}
+
+
+ div>div>div>div{
+    height:auto;
+    width: 100%;
+    border: solid white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:white;
+    position: relative;
+    top: -100px;
+ }
+ 
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;}
+}
+
+</style>
+<body>
+
+    <div id="title">
+        <h1>
+            The Best Colors</h1>
+    </div>
+<div id="parent-box">
+    <div id="first-box">
+        <div id="first-first-box">
+            <div id="first-first-first-box">
+            <span>Toamto</span>
+            <span>#FF6347</span>
+            </div>       
+        </div>   
+        <div  id="first-second-box">
+            <div id="first-first-second-box">
+            <span>burlywood</span>
+            <span>#DEB887</span>
+            </div>  
+        </div>   
+    </div>    
+
+
+    <div id="second-box">
+
+        <div id="second-first-box">
+            <div id="second-first-first-box">
+            <span>Teal</span>
+            <span>#008080</span>
+            </div>
+        </div>
+
+        <div id="second-second-box">
+            <div id="second-first-second-box">
+            <span>Thistle</span>
+            <span>#D7BFD7</span>
+            </div>
+        </div>  
+    </div> 
+
+</div>  
+</body>
+
+</html>
