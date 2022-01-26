@@ -14,11 +14,11 @@ body{
 #inside{
     height:1000px;
     width:1000px;
-    border: #008080;
     background-color:#008080;
     display:flex;
     justify-content:center;
     flex-direction: column;
+ 
 }
 
 .dot {
@@ -43,14 +43,19 @@ body{
     display:flex;
     justify-content:center;
     flex-direction: row;
+
+    
     
 }
 #dot{
-    margin: 5% 0;
     display:flex;
     justify-content: space-around;
     flex-direction: row;
     animation: dotAnimation 1s ease-in-out infinite;
+    width: 500px;
+   
+    position: relative;
+    left: 250px;
 }
 
 .vl:nth-child(2) {
