@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<style>
+
+body{
+   justify-content:center;
+    background-color:black;
+    display:flex;
+}
+
+#inside{
+    height:1000px;
+    width:1000px;
+    border: #008080;
+    background-color:#008080;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    border:solid white;
+    margin: 10px 50px 20px 0;
+   
+  }
+
+  .vl {
+    height: 20px;
+    width:5px;
+    border:5;
+    margin: 10px 50px 20px 0;
+    border:solid white;
+    background-color:white;
+  }
+
+#bar{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+}
+#dot{
+    margin: 5% 0;
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+
+</style>
+<body id="title">
+        <div id="inside">
+            <div id="dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div id="bar">
+                <div class="vl"></div>
+                <div class="vl"></div>
+                <div class="vl"></div>
+                <div class="vl"></div>
+                <div class="vl"></div>
+            </div>
+        </div>
+</body>
+
+</html>
