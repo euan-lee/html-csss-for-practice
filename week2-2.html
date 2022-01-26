@@ -26,10 +26,7 @@ body{
     width: 25px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
     border:solid white;
-    margin: 10px 50px 20px 0;
-   
   }
 
   .vl {
@@ -39,19 +36,66 @@ body{
     margin: 10px 50px 20px 0;
     border:solid white;
     background-color:white;
+    animation: lineAnim 1s ease-in-out infinite;
   }
 
 #bar{
     display:flex;
     justify-content:center;
     flex-direction: row;
+    
 }
 #dot{
     margin: 5% 0;
     display:flex;
-    justify-content:center;
+    justify-content: space-around;
     flex-direction: row;
+    animation: dotAnimation 1s ease-in-out infinite;
 }
+
+.vl:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .vl:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .vl:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .vl:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+
+
+@keyframes dotAnimation {
+    50% {
+      transform: rotate(0.5turn);
+    }
+    100% {
+      transform: rotate(0.5turn);
+    }
+  }
+
+  
+
+
+  @keyframes lineAnim {
+    0% {
+      transform: none;
+    }
+    25% {
+      transform: scaleY(2);
+    }
+    50%,
+    100% {
+      transform: none;
+    }
+  }
+  
+
+
+
 
 
 </style>
